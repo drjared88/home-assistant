@@ -1,8 +1,8 @@
 """Support for Amcrest IP cameras."""
 import asyncio
 import logging
-
-from homeassistant.components.camera import Camera
+from homeassistant.components.camera import (
+    Camera, SUPPORT_STREAM)
 from homeassistant.components.ffmpeg import DATA_FFMPEG
 from homeassistant.const import CONF_NAME
 from homeassistant.helpers.aiohttp_client import (
